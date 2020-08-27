@@ -9,6 +9,7 @@
             <thead>
                 <tr>
                     <th>id</th>
+                    <th>ステータス</th>
                     <th>タスク</th>
                 </tr>
             </thead>
@@ -22,7 +23,7 @@
                 </tr>
                 @endforeach
             </tbody>
-        </table>    
+        </table>
     @endif
         {{-- タスク作成ページへのリンク --}}
     {!! link_to_route('tasks.create', 'タスクの投稿', [], ['class' => 'btn btn-primary']) !!}
